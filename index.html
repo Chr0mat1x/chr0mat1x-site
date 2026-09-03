@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chr0mat1x — разработка сайтов и цифровых продуктов</title>
+  <meta name="description" content="Chr0mat1x — создаём сайты, веб-приложения и ботов. Чёрное, белое и код.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='black'/><text x='50' y='68' font-size='55' font-family='monospace' fill='white' text-anchor='middle'>C</text></svg>">
+</head>
+<body>
+
+  <div class="preloader" id="preloader"><span class="preloader__text">CHR0MAT1X</span></div>
+  <div class="cursor" id="cursor"></div>
+
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#hero" class="logo">CHR<span class="logo__accent">0</span>MAT1X</a>
+      <nav class="nav" id="nav">
+        <a href="#services" class="nav__link">Услуги</a>
+        <a href="#process" class="nav__link">Процесс</a>
+        <a href="#pricing" class="nav__link">Форматы</a>
+        <a href="#faq" class="nav__link">FAQ</a>
+        <a href="#contact" class="nav__link nav__link--cta">Обсудить проект</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <section class="hero" id="hero">
+    <div class="container">
+      <p class="hero__tag reveal">/ студия разработки</p>
+      <h1 class="hero__title">
+        <span class="reveal">ЧЁРНОЕ.</span><br>
+        <span class="reveal">БЕЛОЕ.</span><br>
+        <span class="reveal hero__title-outline">КОД.</span>
+      </h1>
+      <p class="hero__sub reveal">Проектируем и разрабатываем сайты, веб-приложения и Telegram-ботов. Без цвета и шума — только суть и результат.</p>
+      <div class="hero__actions reveal">
+        <a href="#contact" class="btn btn--fill">Обсудить проект</a>
+        <a href="#services" class="btn btn--ghost">Что мы делаем →</a>
+      </div>
+      <div class="hero__stats reveal">
+        <div class="stat"><span class="stat__num">15+</span><span class="stat__label">проектов</span></div>
+        <div class="stat"><span class="stat__num">7</span><span class="stat__label">направлений</span></div>
+        <div class="stat"><span class="stat__num">24/7</span><span class="stat__label">на связи</span></div>
+      </div>
+    </div>
+    <div class="hero__grid" aria-hidden="true"></div>
+  </section>
+
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="section__num">01</span>
+        <h2 class="section__title">Услуги</h2>
+      </div>
+      <div class="services">
+        <article class="service reveal">
+          <span class="service__index">/01</span>
+          <h3>Лендинги и визитки</h3>
+          <p>Продающие одностраничники с сильной типографикой, анимацией и скоростью 90+ в Lighthouse.</p>
+        </article>
+        <article class="service reveal">
+          <span class="service__index">/02</span>
+          <h3>Корпоративные сайты</h3>
+          <p>Многостраничные сайты компаний: структура, каталог услуг, CMS, удобное обновление контента.</p>
+        </article>
+        <article class="service reveal">
+          <span class="service__index">/03</span>
+          <h3>Интернет-магазины</h3>
+          <p>Каталог, корзина, оплата и админ-панель. От небольшого магазина до полноценной платформы.</p>
+        </article>
+        <article class="service reveal">
+          <span class="service__index">/04</span>
+          <h3>Веб-приложения</h3>
+          <p>Личные кабинеты, дашборды, CRM и SaaS-сервисы на современных фреймворках.</p>
+        </article>
+        <article class="service reveal">
+          <span class="service__index">/05</span>
+          <h3>Telegram-боты</h3>
+          <p>Боты для продаж, записи клиентов, рассылок и автоматизации рутинных процессов.</p>
+        </article>
+        <article class="service reveal">
+          <span class="service__index">/06</span>
+          <h3>Поддержка и доработка</h3>
+          <p>Берём существующие проекты на сопровождение: правки, ускорение, рефакторинг, SEO.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--dark" id="process">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="section__num">02</span>
+        <h2 class="section__title">Как мы работаем</h2>
+      </div>
+      <ol class="process">
+        <li class="process__step reveal"><span class="process__num">1</span><div><h3>Бриф</h3><p>Разбираем задачу, цели и аудиторию. Согласуем объём и цену.</p></div></li>
+        <li class="process__step reveal"><span class="process__num">2</span><div><h3>Дизайн</h3><p>Прототип и макет ключевых страниц. Правки — до полного «да».</p></div></li>
+        <li class="process__step reveal"><span class="process__num">3</span><div><h3>Разработка</h3><p>Кодим, показываем прогресс, держим вас в курсе на каждом этапе.</p></div></li>
+        <li class="process__step reveal"><span class="process__num">4</span><div><h3>Запуск</h3><p>Тестируем, подключаем домен и аналитику, передаём проект.</p></div></li>
+        <li class="process__step reveal"><span class="process__num">5</span><div><h3>Поддержка</h3><p>Остаёмся на связи после релиза и помогаем проекту расти.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" id="why">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="section__num">03</span>
+        <h2 class="section__title">Почему мы</h2>
+      </div>
+      <div class="why">
+        <div class="why__item reveal"><h3>Сроки</h3><p>Лендинг — от 5 дней. Дедлайн для нас не пожелание, а обязательство.</p></div>
+        <div class="why__item reveal"><h3>Прозрачность</h3><p>Фиксированная смета и понятные этапы. Никаких «доплатите ещё».</p></div>
+        <div class="why__item reveal"><h3>Скорость</h3><p>Оптимизируем картинки и код — сайт летает даже на слабом интернете.</p></div>
+        <div class="why__item reveal"><h3>Контакт</h3><p>Прямой канал с разработчиком. Без менеджеров-посредников.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--dark" id="pricing">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="section__num">04</span>
+        <h2 class="section__title">Форматы работы</h2>
+      </div>
+      <div class="pricing">
+        <article class="price reveal">
+          <h3>START</h3>
+          <p class="price__desc">Лендинг или визитка</p>
+          <p class="price__value">≈ 3 000 руб</p>
+          <ul><li>Дизайн + вёрстка</li><li>Адаптив под все экраны</li><li>Срок: от 5 дней</li></ul>
+          <a href="#contact" class="btn btn--ghost btn--wide">Выбрать</a>
+        </article>
+        <article class="price price--featured reveal">
+          <h3>BUSINESS</h3>
+          <p class="price__desc">Сайт компании или магазин</p>
+          <p class="price__value">≈ 5 000 руб</p>
+          <ul><li>Многостраничный сайт / каталог</li><li>Админ-панель</li><li>SEO-база + аналитика</li><li>Срок: от 14 дней</li></ul>
+          <a href="#contact" class="btn btn--fill btn--wide">Выбрать</a>
+        </article>
+        <article class="price reveal">
+          <h3>CUSTOM</h3>
+          <p class="price__desc">Веб-приложение, бот, SaaS</p>
+          <p class="price__value">индивидуально</p>
+          <ul><li>Любая логика и интеграции</li><li>API, боты, кабинеты</li><li>Обсуждаем под задачу</li></ul>
+          <a href="#contact" class="btn btn--ghost btn--wide">Обсудить</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="section__num">05</span>
+        <h2 class="section__title">FAQ</h2>
+      </div>
+      <div class="faq">
+        <details class="faq__item reveal">
+          <summary>Сколько стоит сайт?</summary>
+          <p>Ориентировочно от 3 000 до 5 000 руб в зависимости от объёма и задачи. После короткого брифа называем точную стоимость — она фиксируется в смете и в процессе не растёт.</p>
+        </details>
+        <details class="faq__item reveal">
+          <summary>Кто пишет тексты и делает дизайн?</summary>
+          <p>Дизайн делаем сами. Тексты можем взять на себя или поработать с вашим контентом — обсудим на брифе.</p>
+        </details>
+        <details class="faq__item reveal">
+          <summary>Как проходит оплата?</summary>
+          <p>По этапам: 50% предоплата, остаток после приёмки. Работаем по договору или как самозанятые — как удобно вам.</p>
+        </details>
+        <details class="faq__item reveal">
+          <summary>Буду ли я сам обновлять сайт?</summary>
+          <p>Да. Подключаем удобную админ-панель и записываем короткую инструкцию. Либо просто напишите нам — поможем.</p>
+        </details>
+        <details class="faq__item reveal">
+          <summary>Что если сайт уже есть, но он старый?</summary>
+          <p>Проведём аудит и честно скажем: лучше редизайн или доработка. Берём проекты на поддержку и ускоряем их.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--dark" id="contact">
+    <div class="container contact">
+      <div class="contact__left reveal">
+        <h2 class="section__title">Обсудим проект?</h2>
+        <p class="contact__text">Расскажите о задаче — ответим в течение дня, предложим решение и цену. Пишите в Telegram или оставьте заявку в форме.</p>
+        <div class="contact__links">
+          <a href="https://t.me/Chr0mat1x" class="contact__link" target="_blank" rel="noopener">Telegram → @Chr0mat1x</a>
+          <a href="mailto:sumarokovart@gmail.com" class="contact__link">sumarokovart@gmail.com</a>
+        </div>
+      </div>
+      <form class="form reveal" id="form" action="https://formspree.io/f/xrpgkdze" method="POST" novalidate>
+        <input type="hidden" name="_subject" value="Заявка с сайта Chr0mat1x">
+        <input type="hidden" name="_template" value="table">
+        <div class="form__row">
+          <label class="form__field">
+            <span>Ваше имя</span>
+            <input type="text" name="name" placeholder="Как к вам обращаться" required>
+          </label>
+          <label class="form__field">
+            <span>Контакт</span>
+            <input type="text" name="contact" placeholder="Telegram или e-mail" required>
+          </label>
+        </div>
+        <label class="form__field">
+          <span>О проекте</span>
+          <textarea name="message" rows="4" placeholder="Пара слов о задаче и сроках"></textarea>
+        </label>
+        <button type="submit" class="btn btn--fill btn--wide" id="submitBtn">Отправить заявку</button>
+        <p class="form__status" id="formStatus"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="footer__logo">CHR<span>0</span>MAT1X</span>
+      <p class="footer__copy">© 2026 Chr0mat1x. Чёрное, белое и код.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
