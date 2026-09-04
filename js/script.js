@@ -20,11 +20,14 @@ const nav = document.getElementById('nav');
 burger.addEventListener('click', () => {
   burger.classList.toggle('burger--open');
   nav.classList.toggle('nav--open');
+  // Блокируем прокрутку страницы под открытым меню
+  document.body.classList.toggle('menu-locked', nav.classList.contains('nav--open'));
 });
 nav.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', () => {
     burger.classList.remove('burger--open');
     nav.classList.remove('nav--open');
+    document.body.classList.remove('menu-locked');
   });
 });
 
